@@ -8,12 +8,12 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainActivityViewModel @Inject constructor(
-    private val mainDataRepository: MainDataRepository
+    private val articlesDataRepository: ArticlesDataRepository
 ) : ViewModel() {
 
     fun getMostViewedArticles() {
         viewModelScope.launch {
-            mainDataRepository.getMostViewedArticles()
+            articlesDataRepository.getMostViewedArticles()
         }
     }
 }

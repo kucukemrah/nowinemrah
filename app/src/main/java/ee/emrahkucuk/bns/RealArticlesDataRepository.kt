@@ -2,9 +2,9 @@ package ee.emrahkucuk.bns
 
 import javax.inject.Inject
 
-class RealMainDataRepository @Inject constructor(
+class RealArticlesDataRepository @Inject constructor(
     private val network: RetrofitNetwork
-) : MainDataRepository {
+) : ArticlesDataRepository {
 
     override suspend fun getMostViewedArticles(): MostViewedArticlesNetworkResponse {
         return network.getMostViewedArticles()

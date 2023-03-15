@@ -11,6 +11,6 @@ interface DataModule {
 
     @Binds
     fun bindsMainDataRepository(
-        mainDataRepository: RealMainDataRepository
-    ): MainDataRepository
+        articlesDataRepository: RealArticlesDataRepository
+    ): ArticlesDataRepository
 }

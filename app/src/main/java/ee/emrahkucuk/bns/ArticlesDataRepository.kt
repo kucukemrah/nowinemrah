@@ -1,5 +1,5 @@
 package ee.emrahkucuk.bns
 
-interface MainDataRepository {
+interface ArticlesDataRepository {
     suspend fun getMostViewedArticles(): MostViewedArticlesNetworkResponse
 }
